@@ -72,7 +72,8 @@ color: transparent;
  
   }
   .btn-primary:hover{
-    background:#4EC5F7;}
+    background:green;
+  color: pink;}
 
 .btn-second{
   margin-top: 10px;
@@ -86,7 +87,8 @@ cursor: pointer;
 transition: background 2s ease-in-out 0.1s;
 }
 .btn-second:hover{
-  background: #FF42A5;
+  background: green;
+  color: pink;
 }
 /* main part online games */
 .online-game-part{
@@ -95,13 +97,7 @@ transition: background 2s ease-in-out 0.1s;
   text-align: center;
   
 }
-/* .card-box{
-  width: 70%;
-  margin: 0px auto;
-} */
 .card{
-  /* margin: 0px auto;
-  width: 70%; */
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 5px;
@@ -113,9 +109,53 @@ transition: background 2s ease-in-out 0.1s;
   height: 400px;
   margin-left: 10px;
 }
-
-
-
+/* play instant part */
+.play-instant{
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.play-i-left{text-align: center;
+margin-right: 20px;}
+.play-i-right{}
+.play-i-right .img-1{position: relative;
+width: 300px;
+height: 350px;}
+.play-i-right .img-2{position:relative;
+  width: 150px;
+  height: 175px;
+  left: -120px;
+  top: -130px;
+}
+/* icons part */
+.icon-part{width: 70%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px; 
+ 
+ 
+}
+.icon{display: flex;
+  cursor: pointer;
+  transition: background 2s ease-in-out 0.1s,
+  border-radius 2s ease-in-out 0.1s,
+  border 2s ease-in-out 0.1s,
+  color 2s ease-in-out 0.1s ;
+}
+  .icon:hover{
+    border-radius: 15px;
+    border: 2px solid red;
+    background: green;
+    color: white;
+  }
 
 
 
@@ -126,7 +166,7 @@ transition: background 2s ease-in-out 0.1s;
 
 /* mobile design */
  @media screen and (max-width:576px){
-  .navbar ,.n-left,.n-right
+  .navbar ,.n-left,.n-right,.play-instant
   {
     flex-direction: column;
     /* justify-content: center; */
@@ -144,6 +184,9 @@ transition: background 2s ease-in-out 0.1s;
     margin:0px auto;
     text-align: center;
   }
+  .icon-part{
+    grid-template-columns: repeat(3,1fr);
+  }
 
 
 
@@ -151,7 +194,7 @@ transition: background 2s ease-in-out 0.1s;
  }
 /* tablet design */
 @media screen and (min-width:576px) and (max-width:960px){
-  .navbar ,.n-left,.n-right,.banner
+  .navbar ,.n-left,.n-right,.banner,.play-instant
   {
     flex-direction: column;
     /* justify-content: center; */
@@ -165,6 +208,10 @@ transition: background 2s ease-in-out 0.1s;
     width: 70%;
     margin:0px auto;
     text-align: center;
+  }
+  ..icon-part{
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
   }
   
 
