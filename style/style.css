@@ -112,6 +112,10 @@ transition: background 2s ease-in-out 0.1s;
 .image-container{
   position: relative;
   display: inline-block;
+  transition: box-shadow 1s ease-in-out 0.2s;
+}
+.image-container:hover{
+  box-shadow: 0px 15px 15px #8758F1;
 }
 .play-button{
   position: absolute;
@@ -130,6 +134,7 @@ transition: background 2s ease-in-out 0.1s;
 }
 .image-container:hover .play-button{
   display: block;
+  box-shadow: 0px 4px 10px rgba(130, 8, 8, 0.5);
 }
 /* play instant part */
 .play-instant{
