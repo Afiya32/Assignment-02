@@ -1,6 +1,10 @@
 /* laptop design */
 /* header part */
-.navbar{max-width: 1920px;
+body{
+  max-width: 1920px;
+  margin: 0px auto;
+}
+.navbar{
   min-height: 0.02vh;
   background: #FFF;
   display: flex;
@@ -32,6 +36,10 @@
   background: rgba(11, 2, 35, 0.10);
 text-align: center;
 padding: 40px;
+transition: border 1s ease-in-out 0.2s;
+}
+.n-btn:hover{
+  border: 5px solid green;
 }
 /* banner part */
 .banner{
@@ -80,6 +88,31 @@ transition: background 2s ease-in-out 0.1s;
 .btn-second:hover{
   background: #FF42A5;
 }
+/* main part online games */
+.online-game-part{
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  
+}
+/* .card-box{
+  width: 70%;
+  margin: 0px auto;
+} */
+.card{
+  /* margin: 0px auto;
+  width: 70%; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5px;
+  text-align: center;
+  box-shadow: 5px blue;
+}
+.single-card img{
+  width: 300px;
+  height: 400px;
+  margin-left: 10px;
+}
 
 
 
@@ -103,6 +136,14 @@ transition: background 2s ease-in-out 0.1s;
   .banner{
     flex-direction: column-reverse;
   }
+  .card{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin:0px auto;
+    text-align: center;
+  }
 
 
 
@@ -116,6 +157,14 @@ transition: background 2s ease-in-out 0.1s;
     /* justify-content: center; */
     align-items: center;
     margin: 10px auto;
+  }
+  .card{
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin:0px auto;
+    text-align: center;
   }
   
 
