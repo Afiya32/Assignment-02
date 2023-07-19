@@ -1,0 +1,124 @@
+/* laptop design */
+/* header part */
+.navbar{max-width: 1920px;
+  min-height: 0.02vh;
+  background: #FFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto;
+
+}
+.n-left{
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  width: 20%;
+   margin: 0px 30px;
+   font-size: 45px; 
+}
+.n-right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 25px;
+  width: 80%;
+
+}
+.n-btn{width: 262px;
+  height: 56px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.10);
+text-align: center;
+padding: 40px;
+}
+/* banner part */
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 0px auto;
+}
+.banner-left{
+  list-style: none;
+}
+.tittle{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  -webkit-background-clip: text;
+color: transparent;
+
+}
+.btn-primary{
+  margin-top: 10px;
+  width: 156px;
+  height: 65px;
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: #FF42A5;
+  color: #FFF;
+  cursor: pointer;
+  transition: background 2s ease-in-out 0.1s;
+ 
+  }
+  .btn-primary:hover{
+    background:#4EC5F7;}
+
+.btn-second{
+  margin-top: 10px;
+  width: 156px;
+  height: 65px;
+  padding: 21px 40px;
+  border-radius: 48px;
+background: #4EC5F7;
+color: #FFF;
+cursor: pointer;
+transition: background 2s ease-in-out 0.1s;
+}
+.btn-second:hover{
+  background: #FF42A5;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* mobile design */
+ @media screen and (max-width:576px){
+  .navbar ,.n-left,.n-right
+  {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px auto;
+  }
+  .banner{
+    flex-direction: column-reverse;
+  }
+
+
+
+
+ }
+/* tablet design */
+@media screen and (min-width:576px) and (max-width:960px){
+  .navbar ,.n-left,.n-right,.banner
+  {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px auto;
+  }
+  
+
+
+
+}
